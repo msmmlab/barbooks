@@ -4,10 +4,10 @@ import PlatformFilter from "./PlatformFilter";
 import CategoryFilter from "./CategoryFilter";
 import SortOptions from "./SortOptions";
 
-const FiltersContainer = () => {
+const FiltersContainer = ({ platform, setPlatform }) => {
   return (
     <div className="FiltersContainer">
-      <PlatformFilter />
+      <PlatformFilter platform={platform} setPlatform={setPlatform} />
       <CategoryFilter />
       <SortOptions />
     </div>

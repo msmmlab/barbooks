@@ -11,7 +11,7 @@ const CategoryFilter = () => {
           name="category"
           autoComplete="off"
           placeholder="Start typing..."
-          size="40"
+          size="20"
         />
       </div>
     </div>

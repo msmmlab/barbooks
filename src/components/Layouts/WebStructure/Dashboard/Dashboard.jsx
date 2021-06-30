@@ -1,44 +1,39 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Dashboard.css";
 import Billboard from "../VisualElements/Billboard";
 import SearchBar from "../../../SearchEngine/SearchBar";
 import FiltersContainer from "../../../Filters/FiltersContainer";
-import http from "../../../../services/http";
 import GamesTable from "../../Games/GamesTable";
-import Spinner from "../Images/Spinner.gif";
 
 const Dashboard = () => {
-  const [games, setGames] = useState([]);
+  const [platform, setPlatform] = useState("PC");
+  const [sorter, setSorter] = useState("Release Date");
+  const [category, setCategory] = useState("");
+  const [title, setTitle] = useState("");
 
-  useEffect(() => {
-    const fetchGames = async () => {
-      const { data } = await http.get("/api/games");
-      setGames(data);
-    };
-    fetchGames();
-  }, []);
-
-  // just for prototyping the card/ GamesTable ->> to be deleted.
-
-  if (games.length === 0) {
-    return (
-      <div>
-        <img src={Spinner} alt="Fetching data" />
-      </div>
-    );
-  } else {
-    const game = games[2];
-    console.log(game);
-
-    return (
-      <div className="Dashboard-container">
-        <Billboard />
-        <SearchBar />
-        <FiltersContainer />
-        <GamesTable game={game} />
-      </div>
-    );
-  }
+  console.log("dashboard platform: ", platform);
+  return (
+    <div className="Dashboard-container">
+      <Billboard />
+      <SearchBar />
+      <FiltersContainer
+        platform={platform}
+        setPlatform={setPlatform}
+        sorter={sorter}
+        setSorter={setSorter}
+        category={category}
+        setCategory={setCategory}
+        title={title}
+        setTile={setTitle}
+      />
+      <GamesTable
+        platform={platform}
+        sorter={sorter}
+        category={category}
+        title={title}
+      />
+    </div>
+  );
 };
 
 export default Dashboard;
