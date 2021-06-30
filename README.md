@@ -7,9 +7,14 @@ This project was created using: npx create-react-app.
 - react-router-dom [https://www.npmjs.com/package/react-router-dom]
 - axios [https://www.npmjs.com/package/axios]
 
+## Fonts used
+
+- Roboto => Google Fonts [https://fonts.google.com/]
+
 ## Improvements for the next iteration
 
-In the project directory, you can run:
+- More powerfull search engine
+- Lazy loading of images
 
 ## Demo available here
 

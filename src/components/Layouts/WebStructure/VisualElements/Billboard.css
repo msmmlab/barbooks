@@ -1,0 +1,27 @@
+.Billboard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.Billboard-slogan {
+  font-size: 1rem;
+}
+
+.Billboard-description {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 1024px) {
+  .Billboard-slogan {
+    font-size: 2.5rem;
+  }
+
+  .Billboard-description {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+  }
+}
