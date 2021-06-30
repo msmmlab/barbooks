@@ -7,7 +7,7 @@ const SearchBar = () => {
     <div className=" SearchBar-container">
       <div className="SearchBar-input">
         <div className="SearchBar-input-icon">
-          <img src={MagnifyingGlass} height="20px" />
+          <img src={MagnifyingGlass} height="20px" alt="search games" />
         </div>
         <div className="searchBar-input-input">
           <input
