@@ -1,0 +1,26 @@
+.SearchBar-container {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.SearchBar-container input {
+  border: none;
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  border-radius: 0.8rem;
+}
+
+.SearchBar-input {
+  display: flex;
+  border-radius: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.SearchBar-input-icon {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding: 10px;
+}
