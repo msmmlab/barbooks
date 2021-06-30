@@ -6,6 +6,7 @@ This project was created using: npx create-react-app.
 
 - react-router-dom [https://www.npmjs.com/package/react-router-dom]
 - axios [https://www.npmjs.com/package/axios]
+- http-proxy-middleware [https://www.npmjs.com/package/http-proxy-middleware]
 
 ## Fonts used
 

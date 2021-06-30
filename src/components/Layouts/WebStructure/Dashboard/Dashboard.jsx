@@ -4,26 +4,41 @@ import Billboard from "../VisualElements/Billboard";
 import SearchBar from "../../../SearchEngine/SearchBar";
 import FiltersContainer from "../../../Filters/FiltersContainer";
 import http from "../../../../services/http";
-import { ApiUrl } from "../../../../config/Api";
+import GamesTable from "../../Games/GamesTable";
+import Spinner from "../Images/Spinner.gif";
 
 const Dashboard = () => {
   const [games, setGames] = useState([]);
 
   useEffect(() => {
     const fetchGames = async () => {
-      const { data } = await http.get(ApiUrl);
-      console.log(data);
+      const { data } = await http.get("/api/games");
+      setGames(data);
     };
     fetchGames();
   }, []);
 
-  return (
-    <div className="Dashboard-container">
-      <Billboard />
-      <SearchBar />
-      <FiltersContainer />
-    </div>
-  );
+  // just for prototyping the card/ GamesTable ->> to be deleted.
+
+  if (games.length === 0) {
+    return (
+      <div>
+        <img src={Spinner} alt="Fetching data" />
+      </div>
+    );
+  } else {
+    const game = games[2];
+    console.log(game);
+
+    return (
+      <div className="Dashboard-container">
+        <Billboard />
+        <SearchBar />
+        <FiltersContainer />
+        <GamesTable game={game} />
+      </div>
+    );
+  }
 };
 
 export default Dashboard;

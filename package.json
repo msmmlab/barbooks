@@ -2,6 +2,7 @@
   "name": "barbooks",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://api.dev.cloud.barbooksaustralia.com/code-challenge/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -37,6 +38,7 @@
   },
   "devDependencies": {
     "axios": "^0.21.1",
+    "http-proxy-middleware": "^2.0.0",
     "react-router-dom": "^5.2.0"
   }
 }
