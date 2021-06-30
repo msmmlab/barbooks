@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 15px;
 }
 
 .Billboard-slogan {
@@ -11,7 +11,7 @@
 }
 
 .Billboard-description {
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
   font-size: 0.8rem;
 }
 

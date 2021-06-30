@@ -1,0 +1,6 @@
+.FiltersContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  font-size: 1rem;
+}

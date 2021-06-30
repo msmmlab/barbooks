@@ -1,0 +1,29 @@
+.PlatformFilter {
+  display: flex;
+}
+
+.PlatformFilter-select select {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  margin-left: 5px;
+  border: 1px solid lightseagreen;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+  background-color: #fff;
+  padding: 10px;
+}
+
+select {
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+.PlatformFilter-label {
+  padding: 10px;
+}
+/* .PlatformFilter-select {
+} */
