@@ -109,4 +109,9 @@
     padding: 10px;
     line-height: 1.5;
   }
+
+  .GameDetails-title {
+    font-weight: 700;
+    font-size: 2rem;
+  }
 }
