@@ -10,8 +10,6 @@ const Dashboard = () => {
   const [category, setCategory] = useState("");
   const [title, setTitle] = useState("");
 
-  console.log("dashboard platform: ", platform);
-  console.log("dashboard sorter: ", sorter);
   return (
     <div className="Dashboard-container">
       <SearchBar title={title} setTitle={setTitle} />

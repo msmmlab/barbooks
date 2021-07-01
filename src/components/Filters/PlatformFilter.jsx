@@ -17,9 +17,6 @@ const options = [
 ];
 
 const PlatformFilter = ({ platform, setPlatform }) => {
-  console.log("received: ", platform);
-  console.log("filter platform: ", platform);
-
   const optionsFiltered = options.filter((option) => option.value !== platform);
 
   const handlePlatformChange = (e) => {

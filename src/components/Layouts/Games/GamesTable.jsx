@@ -40,11 +40,10 @@ const GamesTable = ({ platform, category, title, sorter }) => {
       const { data } = await axios.get(`${constructEndpoint()}`);
 
       if (title) {
-        console.log(title);
         const dataFiltered = data.filter((game) =>
           game.title.toLocaleLowerCase().includes(title.toLocaleLowerCase())
         );
-        console.log(dataFiltered);
+
         if (dataFiltered.length > 0) {
           setGames(dataFiltered);
         } else {
