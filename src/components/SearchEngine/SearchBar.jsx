@@ -25,6 +25,7 @@ const SearchBar = ({ title, setTitle }) => {
           <form onSubmit={handleSubmit}>
             <input
               type="text"
+              id="searchBar"
               placeholder={title ? title : "Search by Name..."}
               name="search"
               autoComplete="off"

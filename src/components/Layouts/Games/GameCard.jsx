@@ -2,19 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./GameCard.css";
 
-// const game = {
-//     developer: "Phoenix Labs, Iron Galaxy",
-//     genre: "MMORPG",
-//     id: 1,
-//     platform: "PC (Windows)",
-//     publisher: "Phoenix Labs",
-//     releaseDate: "2019-05-21",
-//     shortDescription:
-//       "A free-to-play, co-op action RPG with gameplay similar to Monster Hunter.",
-//     thumbnail: "/g/1/thumbnail.jpg",
-//     title: "Dauntless",
-//   };
-
 const GameCard = ({ game }) => {
   const renderTitle = () => {
     if (game.title.length > 26) {
