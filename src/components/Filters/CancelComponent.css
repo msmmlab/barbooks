@@ -2,6 +2,20 @@
   display: flex;
   justify-content: center;
   align-self: center;
-
+  padding: 5px;
   cursor: pointer;
+}
+
+.ClearFilter-label {
+  padding-right: 5px;
+}
+
+@media (max-width: 425px) {
+  .ClearFilters {
+    margin: 5px;
+  }
+  .ClearFilter-label {
+    padding-right: 5px;
+    padding-top: 2px;
+  }
 }

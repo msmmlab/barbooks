@@ -10,6 +10,8 @@ const CancelComponent = ({ setSorter, setCategory, setPlatform }) => {
   };
   return (
     <div className="ClearFilters">
+      <div className="ClearFilter-label">Reset filters</div>
+
       <img
         src={Cancel}
         alt="clear filters"
