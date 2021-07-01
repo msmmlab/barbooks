@@ -1,10 +1,16 @@
-.GameCardContainer {
-  margin: 20px;
+/* .GameCardContainer {
+  margin: 2px;
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   grid-auto-rows: auto;
   justify-items: center;
   gap: 10px;
+} */
+
+.GameCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .Loader {

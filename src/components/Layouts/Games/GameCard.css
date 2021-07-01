@@ -1,14 +1,15 @@
 .GameCard {
-  width: 600px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   border-radius: 0.8rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  padding: 20px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .GameCard-title {
-  font-size: 3rem;
+  font-size: 2rem;
   padding: 15px;
   text-align: center;
 }
@@ -18,8 +19,13 @@
   padding-top: 20px;
 }
 
+.GameCard-thumbnail {
+  padding-left: 10px;
+}
+
 .GameCard-description {
-  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   line-height: 1.5;
 }
 .GameCard-link {
