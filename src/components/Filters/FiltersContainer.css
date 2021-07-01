@@ -4,3 +4,14 @@
   padding: 30px;
   font-size: 1rem;
 }
+
+@media (max-width: 425px) {
+  .FiltersContainer {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+}

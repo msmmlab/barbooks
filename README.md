@@ -17,7 +17,8 @@ This project was created using: npx create-react-app.
 - More powerfull search engine
 - Lazy loading of images
 - Improvement of API requests (pagination)
-- Screenshots layouts in game details.
+- Screenshots layouts in game details
+- Mobile First design
 - Proper shortening of long games titles
 
 ## Demo available here

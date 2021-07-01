@@ -28,7 +28,7 @@ const SearchBar = ({ title, setTitle }) => {
               placeholder={title ? title : "Search by Name..."}
               name="search"
               autoComplete="off"
-              size="40"
+              size="30"
               value={userInput}
               onChange={handleChange}
             />

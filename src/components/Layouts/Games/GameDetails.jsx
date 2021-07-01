@@ -43,7 +43,7 @@ const GameDetails = (props) => {
         <div className="GameDetails-container">
           <div className="GameDetails-close">
             <Link to="/">
-              <img src={Close} height="30px" alt="cancel" />
+              <img src={Close} height="20px" alt="cancel" />
             </Link>
           </div>
           <div className="GameDetails-body">
@@ -53,7 +53,7 @@ const GameDetails = (props) => {
             <div className="GameDetails-content">
               <div className="GameDetails-requirements">
                 <div className="GameDetails-requirements-title">
-                  Requirments
+                  Requirements
                 </div>
                 <div className="GameDetails-requirements-info">
                   <div className="GameDetails-requirements-item">

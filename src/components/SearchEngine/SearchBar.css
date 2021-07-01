@@ -24,3 +24,16 @@
   align-self: center;
   padding: 10px;
 }
+
+@media (max-width: 425px) {
+  .SearchBar-container input {
+    font-size: 1rem;
+  }
+  .SearchBar-container {
+    background-color: lightseagreen;
+    border-radius: 0.8rem;
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+  }
+}

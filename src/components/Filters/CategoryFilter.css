@@ -32,3 +32,13 @@
 .GameDetails-title {
   padding: 15px;
 }
+
+@media (max-width: 425px) {
+  .CategoryFilter-input input {
+    font-size: 0.8rem;
+    padding: 5px;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    border: 1px solid lightseagreen;
+  }
+}
