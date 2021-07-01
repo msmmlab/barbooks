@@ -1,0 +1,8 @@
+.GameCardContainer {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-auto-rows: auto;
+  justify-items: center;
+  gap: 10px;
+}
