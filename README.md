@@ -24,6 +24,7 @@ This project was created using: npx create-react-app.
 - Adjusting color scheme across all pages
 - Improved components structure and code cleaning (DRY)
 - Adding more automated tests
+- Handling async errors and error management
 
 ## Ideas for the next iterations
 
