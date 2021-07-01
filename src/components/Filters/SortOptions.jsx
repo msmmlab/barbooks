@@ -3,8 +3,8 @@ import "./PlatformFilter.css";
 
 const options = [
   {
-    label: "Release Date",
-    value: "Release Date",
+    label: "Release-Date",
+    value: "Release-Date",
   },
   {
     label: "Alphabetical",

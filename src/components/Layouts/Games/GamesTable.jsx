@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import http from "../../../services/http";
+import axios from "axios";
 import Spinner from "../WebStructure/Images/Spinner.gif";
 import GameCard from "./GameCard";
 import "./GamesTable.css";
@@ -7,15 +7,55 @@ import "./GamesTable.css";
 const GamesTable = ({ platform, category, title, sorter }) => {
   const [games, setGames] = useState([]);
 
-  console.log("games table platform: ", platform);
-
   useEffect(() => {
+    const constructEndpoint = () => {
+      let endpoint = "/api/games";
+      if (platform || category || sorter) {
+        endpoint += "?";
+
+        if (platform && category && sorter) {
+          endpoint += `platform=${platform}&category=${category}&sort-by=${sorter}`;
+          let finalEndpoint = endpoint.toLocaleLowerCase();
+          return finalEndpoint;
+        }
+        if (platform && category) {
+          endpoint += `platform=${platform}&category=${category}`;
+        }
+        if (category && sorter) {
+          endpoint += `category=${category}&sort-by=${sorter}`;
+        }
+
+        if (platform && sorter) {
+          endpoint += `platform=${platform}&sort-by=${sorter}`;
+        }
+
+        let finalEndpoint = endpoint.toLocaleLowerCase();
+
+        return finalEndpoint;
+      }
+    };
+
+    setGames([]);
     const fetchAllGames = async () => {
-      const { data } = await http.get("/api/games");
-      setGames(data);
+      const { data } = await axios.get(`${constructEndpoint()}`);
+
+      if (title) {
+        console.log(title);
+        const dataFiltered = data.filter((game) =>
+          game.title.toLocaleLowerCase().includes(title.toLocaleLowerCase())
+        );
+        console.log(dataFiltered);
+        if (dataFiltered.length > 0) {
+          setGames(dataFiltered);
+        } else {
+          setGames(data);
+        }
+      } else {
+        setGames(data);
+      }
     };
     fetchAllGames();
-  }, []);
+  }, [platform, category, sorter, title]);
 
   if (games.length === 0) {
     return (
@@ -24,19 +64,6 @@ const GamesTable = ({ platform, category, title, sorter }) => {
       </div>
     );
   } else {
-    // just for testing ==> to be deleted.
-    const game = {
-      developer: "Phoenix Labs, Iron Galaxy",
-      genre: "MMORPG",
-      id: 1,
-      platform: "PC (Windows)",
-      publisher: "Phoenix Labs",
-      releaseDate: "2019-05-21",
-      shortDescription:
-        "A free-to-play, co-op action RPG with gameplay similar to Monster Hunter.",
-      thumbnail: "/g/1/thumbnail.jpg",
-      title: "Dauntless",
-    };
     return (
       <div className="GameCardContainer">
         {games.map((game) => {

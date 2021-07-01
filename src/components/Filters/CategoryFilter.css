@@ -3,6 +3,8 @@
 }
 
 .CategoryFilter-input input {
+  display: flex;
+  flex-direction: column;
   font-family: "Roboto", sans-serif;
   border: none;
   font-size: 1rem;
@@ -15,4 +17,12 @@
 
 .CategoryFilter-label {
   padding: 10px;
+}
+
+.Category-choose {
+  background-color: #fff;
+  color: #000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 5px;
+  cursor: pointer;
 }

@@ -7,7 +7,7 @@ import GamesTable from "../../Games/GamesTable";
 
 const Dashboard = () => {
   const [platform, setPlatform] = useState("PC");
-  const [sorter, setSorter] = useState("Release Date");
+  const [sorter, setSorter] = useState("Release-Date");
   const [category, setCategory] = useState("");
   const [title, setTitle] = useState("");
 
@@ -16,7 +16,7 @@ const Dashboard = () => {
   return (
     <div className="Dashboard-container">
       <Billboard />
-      <SearchBar />
+      <SearchBar title={title} setTitle={setTitle} />
       <FiltersContainer
         platform={platform}
         setPlatform={setPlatform}
@@ -24,8 +24,6 @@ const Dashboard = () => {
         setSorter={setSorter}
         category={category}
         setCategory={setCategory}
-        title={title}
-        setTile={setTitle}
       />
       <GamesTable
         platform={platform}
