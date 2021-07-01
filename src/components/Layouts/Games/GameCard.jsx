@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./GameCard.css";
 
 // const game = {
@@ -24,7 +25,9 @@ const GameCard = ({ game }) => {
         </div>
         <div className="GameCard-content">
           <div className="GameCard-description">{game.shortDescription}</div>
-          <div className="GameCard-link">View more {">"}</div>
+          <div className="GameCard-link">
+            <Link to={`/${game.id}`}>View more {">"}</Link>
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Dashboard.css";
-import Billboard from "../VisualElements/Billboard";
 import SearchBar from "../../../SearchEngine/SearchBar";
 import FiltersContainer from "../../../Filters/FiltersContainer";
 import GamesTable from "../../Games/GamesTable";
@@ -15,7 +14,6 @@ const Dashboard = () => {
   console.log("dashboard sorter: ", sorter);
   return (
     <div className="Dashboard-container">
-      <Billboard />
       <SearchBar title={title} setTitle={setTitle} />
       <FiltersContainer
         platform={platform}

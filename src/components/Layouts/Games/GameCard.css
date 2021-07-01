@@ -26,5 +26,9 @@
   text-align: end;
   font-weight: 700;
   padding: 15px;
-  cursor: pointer;
+}
+
+.GameCard-link a {
+  text-decoration: none;
+  color: lightseagreen;
 }
