@@ -15,15 +15,18 @@ This project was created using: npx create-react-app.
 ## Improvements for the next iteration
 
 - More powerfull search engine
+- Improved UX while searching (reseting filters / remembering choices)
 - Lazy loading of images
 - Improvement of API requests (pagination)
 - Screenshots layouts in game details
 - Mobile First design
 - Proper shortening of long games titles
 
-## Demo available here
+## Ideas for the next iteration
 
-[https://netlify]
+- user might be able to download selected game
+- adding YouTube gameplays
+- adding game reviews / ratings
 
 ### `npm start`
 
