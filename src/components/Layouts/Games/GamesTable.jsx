@@ -4,6 +4,7 @@ import Spinner from "../WebStructure/Images/Spinner.gif";
 
 const GamesTable = ({ platform, category, title, sorter }) => {
   const [games, setGames] = useState([]);
+  console.log("games table platform: ", platform);
 
   useEffect(() => {
     const fetchAllGames = async () => {

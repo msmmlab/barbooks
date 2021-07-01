@@ -12,6 +12,7 @@ const Dashboard = () => {
   const [title, setTitle] = useState("");
 
   console.log("dashboard platform: ", platform);
+  console.log("dashboard sorter: ", sorter);
   return (
     <div className="Dashboard-container">
       <Billboard />
