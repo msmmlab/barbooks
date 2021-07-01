@@ -20,9 +20,11 @@
 }
 
 .Category-choose {
-  background-color: #fff;
-  color: #000;
+  background-color: #333;
+  color: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 5px;
   cursor: pointer;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
 }

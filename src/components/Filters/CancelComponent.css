@@ -1,0 +1,7 @@
+.ClearFilters {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+  cursor: pointer;
+}
