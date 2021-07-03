@@ -32,7 +32,7 @@ const GameDetails = (props) => {
         return game.screenshots.map((screenshot) => {
           return (
             <div className="GameDetails-screenshot" key={screenshot.image}>
-              <img src={screenshot.image} alt="Screenshot" width="250px" />
+              <img src={screenshot.image} alt="Screenshot" />
             </div>
           );
         });
